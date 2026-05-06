@@ -1,5 +1,6 @@
 # Python
 backend/.venv
+backend/venv
 backend/.env
 backend/__pycache__/
 backend/*.pyc
@@ -13,4 +14,5 @@ frontend/.env
 # General
 .DS_Store
 *.env
+
  

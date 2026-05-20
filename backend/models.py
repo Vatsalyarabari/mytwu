@@ -17,4 +17,3 @@ class Course(Base):
     code: Mapped[str] = mapped_column(String, nullable=False)
     department: Mapped[str] = mapped_column(String, nullable=False)
     
-    

@@ -11,3 +11,11 @@ Base.metadata.create_all(bind=engine)
 def professor():
     return {"Hello": "Buggers"}
 
+@app.post("/professor")
+def create_professors(professor: str, db: db_dependency):
+    new_professor = models.Professor(name = professor, department = professor)
+    db.add(new_professor)
+    db.commit()
+    db.refresh(new_professor)
+    return new_professor
+
